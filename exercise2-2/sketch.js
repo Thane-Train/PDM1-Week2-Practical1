@@ -49,6 +49,15 @@ function draw() {
     rect(centreX + 12.5, centreY + 62.5, 25, 30);
     //black
     fill(0);
-    circle(centreX - 15, centreY - 90, 7)
-    circle(centreX + 15, centreY - 90, 7)
+    circle(centreX - 15, centreY - 90, 7);
+    circle(centreX + 15, centreY - 90, 7);
+    //sword
+    if (mouseIsPressed) {
+    fill(60, 55, 88);
+    rect(centreX + 95, centreY - 65, 10, 20);
+    rect(centreX + 85, centreY - 70, 30, 10);
+    fill(136, 153, 170);
+    rect(centreX + 95, centreY - 120, 10, 50);
+    triangle(centreX + 95, centreY - 120, centreX + 105, centreY - 120, centreX + 100, centreY - 135);
+    }
 }
